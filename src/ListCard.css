@@ -1,0 +1,42 @@
+.ListCard_body_closed{
+    width: 380px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    flex-direction: column;
+}
+.ListCard_body_open{
+    width: 380px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.ListCard_header_open{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(54, 55, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.ListCard_animes{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+}
+
+.none{
+    display: none;
+}

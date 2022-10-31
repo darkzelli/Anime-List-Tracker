@@ -1,0 +1,10 @@
+.animelistCard_body{
+    width: 75px;
+    height: 75px;
+    background-color: blue;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px white solid;
+}
