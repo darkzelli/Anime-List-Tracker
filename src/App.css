@@ -2,47 +2,84 @@
   box-sizing: border-box;
 }
 
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
 .App{
   width: 400px;
-  height: 600px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0B0513;
+  background: #0D0D0E;
   color: white;
-  border-radius: 20px;
   flex-direction: column;
   overflow: auto;
 }
-.Tabs{
+.appTabs{
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
+  position: absolute;
+  top: 40px;
 }
-.tab{
-  width: 110px;
-  height: 25px;
-  border-radius: 15px;
-  background-color: #282729;
+.apptab_active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #5E41B0;
+  margin: 3px;
+  cursor: pointer;
+}
+.apptab_nonactive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0B0513;
   margin: 3px;
   cursor: pointer;
 }
 
+.apptab_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 2;
+}
+
 .front_group_1{
+  padding-top: 125px;
   display: flex;
   flex-direction: row;
 }
 .front_group_2{
+  padding-top: 5px;
   display: flex;
   flex-direction: row;
 }
 .front_group_3{
+  padding-top: 5px;
   display: flex;
   flex-direction: row;
 }
 .front_group_4{
-  display: flex;
+  display: none;
   flex-direction: row;
 }
 .App_header{
@@ -67,3 +104,30 @@
   cursor: pointer;
   margin-top: 360px;
 }
+
+.search_bar_bg{
+  position: absolute;
+  top: 115px;
+  width: 280px;
+  height: 25px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.search_bar{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  width: 260px;
+
+}
+
+.hometab{
+  margin: 0 60px;
+}
+

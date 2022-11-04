@@ -3,5 +3,81 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: auto;
+}
+
+.allStars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fivestarTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    background-color: #13DA6E;
+    border-radius: 15px;
+}
+
+.fourstarTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 30px;
+    background-color: #13DA6E;
+    border-radius: 15px;
+}
+
+.threestarTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #13DA6E;
+    border-radius: 15px;
+}
+
+.twostarTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background-color: #13DA6E;
+    border-radius: 15px;
+}
+
+.onestarTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 30px;
+    background-color: #13DA6E;
+    border-radius: 15px;
+}
+.startitle{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.starBlock{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+}
+
+.displayNone{
+    display: none;
+}
+
+.layoutChanger{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
 }

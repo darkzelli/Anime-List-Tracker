@@ -108,3 +108,11 @@ export const lists = {
 
 export const ratings = [{title: "Naruto", rating: 5}, {title: "Ball", rating: 5}]
 
+export const ratings2 = {
+    data: [{ratingClass: 5, list : []}, 
+    {ratingClass : 4, list: []},
+    {ratingClass : 3, list: []},
+    {ratingClass : 2, list: []},
+    {ratingClass : 1, list: []}]
+}
+

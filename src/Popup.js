@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './Popup.css';
-import { lists, ratings } from './data';
+import { lists, ratings2 } from './data';
 
 
 function Popup(props){
@@ -10,36 +10,40 @@ function Popup(props){
     const [star3, setstar3] = useState("star_border")
     const [star4, setstar4] = useState("star_border")
     const [star5, setstar5] = useState("star_border")
-    const ratingLength = ratings.length;
+    const ratingLength = ratings2.data.length;
     useEffect(() => {
         for(let i = 0; i < ratingLength; i++ ){
-            if(props.title === ratings[i].title){
-                calculateStarDisplay(ratings[i].rating);
+            for(let j = 0; j < ratings2.data[i].list.length; j++)
+            if(props.title === ratings2.data[i].list[j].title){
+                calculateStarDisplay(ratings2.data[i].list[j].rating);
             }
         }
     })
 
-    function checkDuplicateRatingnUpdate(rating){
-        const lengthOfRating = ratings.length;
-        let updateInteger = 0; 
-        let replaceIndex = 0;
 
+    function newDuplicateRatingUpdate(index, rating){
+        const lengthOfRating = ratings2.data.length;
+        let updateInteger = 0;
+        let replaceIndexI = 0;
+        let replaceIndexJ = 0;
         if(lengthOfRating === 0){
-            ratings.push({title: props.title, rating: rating});
+            ratings2.data[index].list.push({title: props.title, rating: rating, pos: "n/a"});
         }else{
             for(let i = 0; i < lengthOfRating; i++){
-                if(ratings[i].title === props.title){
-                    updateInteger = updateInteger + 1; 
-                    replaceIndex = i;
-                }
-                if(i === (lengthOfRating - 1)){
-                    if(updateInteger === 0){
-                        ratings.push({title: props.title, rating: rating});
-                    }else{
-                        if(ratings[replaceIndex].rating !== rating ){
-                            ratings[replaceIndex] = {title: props.title, rating: rating};
-                        }
+                for(let j = 0; j < ratings2.data[i].list.length; j++){
+                    if(ratings2.data[i].list[j].title === props.title){
+                        updateInteger = updateInteger + 1;
+                        replaceIndexI = i;
+                        replaceIndexJ = j;
                     }
+                }
+            }
+            if(updateInteger === 0){
+                ratings2.data[index].list.push({title: props.title, rating: rating, pos: "n/a"});
+            }else{
+                if(ratings2.data[replaceIndexI].list[replaceIndexJ].rating !== rating){
+                    ratings2.data[replaceIndexI].list.splice(replaceIndexJ, 1);
+                    ratings2.data[index].list.push({title: props.title, rating: rating, pos: "n/a"});
                 }
             }
         }
@@ -48,23 +52,24 @@ function Popup(props){
         switch(rating){
             case 1:
                 setrating(1);
-                checkDuplicateRatingnUpdate(1);
+                newDuplicateRatingUpdate(4, 1);
                 break;
             case 2:
                 setrating(2);
-                checkDuplicateRatingnUpdate(2);
+                newDuplicateRatingUpdate(3, 2);
                 break;
             case 3:
                 setrating(3);
-                checkDuplicateRatingnUpdate(3);
+                newDuplicateRatingUpdate(2, 3);
                 break;
             case 4:
                 setrating(4);
-                checkDuplicateRatingnUpdate(4);
+                newDuplicateRatingUpdate(1, 4);
                 break;
             case 5:
                 setrating(5);
-                checkDuplicateRatingnUpdate(5);
+                newDuplicateRatingUpdate(0, 5);
+                console.log(ratings2.data);
                 break;
             default:
 

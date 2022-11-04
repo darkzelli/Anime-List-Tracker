@@ -7,9 +7,14 @@ import Popup from './Popup';
 import Allratingscom from './Allratingscom';
 
 function App(){
+  //Array used to display featured anime on the homepage
   const [animeDisplay, setanimeDisplay] = useState([{title: "naruto"},2,3,4,5,6,7,8,9,10,11,12]);
+  //variable used to change the cotent displayed on the page based on the tab selected
   const [activeTabData, setactiveTabData] = useState("nothing");
+  //Used to display and remove popup
   const [popupState, setpopupState] = useState("");
+  //Used to keep track of the selected tab
+  const [activeTab, setActiveTab] = useState("home");
 
   useEffect(()=> {
     function generateRandomList(){
@@ -72,16 +77,37 @@ function App(){
 
   const rating = <><Allratingscom /></>
 
+  function homeClick(){
+    setactiveTabData(home);
+    setActiveTab("home");
+  }
+
+  function ratingClick(){
+    setactiveTabData(rating);
+    setActiveTab("rating");
+  }
+
+  function listClick(){
+    setactiveTabData(list);
+    setActiveTab("list");
+  }
+
   return (
     <div className="App">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-      <header className='App_header'>ZELIOLIST</header>
-      <div className='Tabs'>
-        <div className='tab material-icons' onClick={() => setactiveTabData(list)}>list</div>
-        <div className='tab material-icons' onClick={() => setactiveTabData(home)}>home</div>
-        <div className='tab material-icons' onClick={() => setactiveTabData(rating)}>star</div>
+      <header className='App_header'></header>
+      <div className='appTabs'>
+        <div className={activeTab === "list" ? 'apptab_active material-icons' : 'apptab_nonactive material-icons' }><div className='apptab_icon' onClick={() => listClick(list)}>list</div></div>
+        <div className={activeTab === "home" ? 'apptab_active material-icons hometab' : 'apptab_nonactive material-icons hometab' }><div className='apptab_icon' onClick={() => homeClick()}>home</div></div>
+        <div className={activeTab === "rating" ? 'apptab_active material-icons' : 'apptab_nonactive material-icons' }><div className='apptab_icon' onClick={() => ratingClick(rating)}>star</div></div>
+      </div>
+      <div className={activeTab === "rating" ? 'popup_closer_noactive' : 'search_bar_bg' }>
+        <form>
+          <input type="search" className='search_bar' placeholder='Search anime...' />
+        </form>
       </div>
       <div className={popupState === "" ? 'popup_closer_noactive' : 'popup_closer_active'} onClick={() => setpopupState("")}>CLOSE</div>
+      <div className='filler_block'></div>
       {activeTabData === "nothing" ? home : activeTabData}
       <div className="createdpopup">{popupState}</div> 
     </div>

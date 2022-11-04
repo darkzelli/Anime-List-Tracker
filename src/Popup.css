@@ -1,19 +1,17 @@
 .popup_body{
     width: 400px;
-    height: 600px;
+    height: 700px;
     position: absolute;
     z-index: 999;
-    border-radius: 15%;
 }
 
 .pop_up_body_2{
     width: 400px;
-    height: 600px;
+    height: 700px;
     background: black;
     position: absolute;
     z-index: 1000;
     opacity: 100%;
-    border-radius: 15%;
     opacity: 65%;
 }
 
@@ -24,7 +22,6 @@
     position: absolute;
     z-index: 1001;
     opacity: 100%;
-    border-radius: 15%;
     left: 50px;
     top: 100px;
     display: flex;
