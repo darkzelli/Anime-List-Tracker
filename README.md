@@ -1,4 +1,4 @@
-# Anime List Tracker Google Extension
+# A-List
 
 ![f2](https://github.com/darkzelli/Anime-List-Tracker/assets/110872601/84098e6c-78b4-42e7-a62a-a4f99fa38b86)
 
