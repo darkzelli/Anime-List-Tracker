@@ -53,7 +53,7 @@ Creating the Anime List Tracker was an enriching journey that allowed me to gras
 
 ## Feedback and Support
 
-If you encounter any issues or have suggestions for improvements, please feel free to [contact us](mailto:your@email.com). We're dedicated to enhancing your anime list tracking experience.
+If you encounter any issues or have suggestions for improvements, please feel free to [contact us](zacharyhallofficial@gmail.com). We're dedicated to enhancing your anime list tracking experience.
 
 ---
 
