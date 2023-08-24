@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Anime List Tracker Google Extension
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![f2](https://github.com/darkzelli/Anime-List-Tracker/assets/110872601/84098e6c-78b4-42e7-a62a-a4f99fa38b86)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+The Anime List Tracker is a powerful Google Chrome extension designed to enhance your anime-watching experience. This tool empowers users to seamlessly track, rate, and organize the anime they have watched, all independent of specific websites. Say goodbye to scattered lists and hello to a centralized anime catalog tailored to your preferences.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Track and Organize:** Keep a comprehensive record of the animes you have watched in one place, regardless of the streaming platform or website.
 
-### `npm test`
+- **Personalized Ratings:** Assign ratings to animes, helping you remember which ones you loved the most and which ones didn't quite make the cut.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **User-Friendly Interface:** Enjoy a clean and intuitive interface that ensures effortless navigation and usability.
 
-### `npm run build`
+## How it Works
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Installation:** Add the Anime List Tracker extension to your Google Chrome browser from the Chrome Web Store.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Adding Animes:** Whenever you come across an anime you've watched, simply open the extension and add it to your list. The extension will automatically fetch relevant information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Rating System:** Rate each anime based on your personal preference. Your ratings will be saved alongside each anime.
 
-### `npm run eject`
+4. **Organization:** Group animes based on your favorite genres, seasons, or any other criteria you find suitable.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Search and Filter:** Easily search and filter your anime list to quickly find specific titles or genres.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React.js:** Developed the extension's frontend using React.js, ensuring a seamless and dynamic user experience.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Google Extension API:** Leveraged Google's Extension API to integrate the extension with the Chrome browser, enabling efficient data retrieval and storage.
 
-## Learn More
+## Learning Experience
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Creating the Anime List Tracker was an enriching journey that allowed me to grasp the fundamentals of building a complete application using React.js. By integrating with Google's Extension API, I learned the intricacies of extending browser functionality and seamless data management.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
 
-### Code Splitting
+1. Download the extension from the Chrome Web Store.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Add the extension to your Google Chrome browser.
 
-### Analyzing the Bundle Size
+3. Open the extension and start adding animes to your list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
+![ffff](https://github.com/darkzelli/Anime-List-Tracker/assets/110872601/cadf5194-4c4b-4cb4-b52c-7079dd52e0bd)
+![f](https://github.com/darkzelli/Anime-List-Tracker/assets/110872601/813b81d4-8233-4edb-96d5-d9da1d5f9a41)
+![fff](https://github.com/darkzelli/Anime-List-Tracker/assets/110872601/5716ac33-2b08-47a2-aa21-fb76a4d20716)
+![ff](https://github.com/darkzelli/Anime-List-Tracker/assets/110872601/04ce294f-fede-4cdb-93cc-3a15ef4ad04b)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Feedback and Support
 
-### Advanced Configuration
+If you encounter any issues or have suggestions for improvements, please feel free to [contact us](mailto:your@email.com). We're dedicated to enhancing your anime list tracking experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Experience a new level of anime organization with the Anime List Tracker. Get started today and embark on a journey to manage your anime-watching escapades like never before!
